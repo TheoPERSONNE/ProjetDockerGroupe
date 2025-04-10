@@ -13,6 +13,19 @@ router.get('/games', async (req, res) => {
     }
 });
 
+router.get("/games/:id", async (req, res) => {
+    try {
+        const game = await Game.findById(req.params.id).populate("reviews.user", "username");
+        if (!game) {
+            return res.status(404).json({ message: "Jeu non trouvé" });
+        }
+        res.json(game);
+    } catch (err) {
+        console.error("Erreur lors de la récupération du jeu :", err);
+        res.status(500).json({ message: "Erreur serveur" });
+    }
+});
+
 // Ajouter un jeu
 router.post('/games', authMiddleware, async (req, res) => {
     const { title, description, genre, platforms, releaseDate, rating, imageUrl } = req.body;

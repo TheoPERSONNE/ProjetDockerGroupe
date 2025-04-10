@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+import GameDetailsPage from './pages/GameDetailsPage';
+import RegisterPage from './pages/RegisterPage'; // Page d'inscription
 
 function App() {
-  const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    fetch("http://localhost:5000/api/message")
-      .then((response) => response.json())
-      .then((data) => setMessage(data.message))
-      .catch((error) => console.error("Error fetching message:", error));
-  }, []);
-
   return (
-    <div>
-      <h1>Frontend React</h1>
-      <p>Message from backend: {message}</p>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} /> {/* Page d'accueil avec la liste des jeux */}
+        <Route path="/games/:gameId" element={<GameDetailsPage />} /> {/* Page de détails du jeu */}
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} /> 
+      </Routes>
+    </Router>
   );
 }
 
