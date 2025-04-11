@@ -1,0 +1,37 @@
+/* styles/HomePage.css */
+.home-page {
+    padding: 2rem;
+    background-color: #0a0a0a;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .home-page h1 {
+    color: #ffdd00;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 0 0 5px #ffdd00;
+  }
+  
+  .games-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 3rem;
+  }
+  
+  .loader {
+    font-size: 1.2rem;
+    color: #ffdd00;
+    text-shadow: 0 0 3px #ffdd00;
+  }
+  
+  .error-msg {
+    color: #ff4c4c;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-shadow: 0 0 3px #ff4c4c;
+  }
+  

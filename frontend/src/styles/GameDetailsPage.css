@@ -1,0 +1,97 @@
+/* styles/GameDetailsPage.css */
+.game-details {
+    padding: 2rem;
+    background-color: #0b0b0b;
+    color: #fefefe;
+    min-height: 100vh;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .banner {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid #ffdd00;
+  }
+  
+  h2 {
+    color: #ffdd00;
+    text-shadow: 0 0 5px #ffdd00;
+    margin-bottom: 1rem;
+  }
+  
+  .reviews ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .reviews li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    border-left: 4px solid #ffdd00;
+    border-radius: 5px;
+  }
+  
+  .review-stars {
+    color: #ffdd00;
+    margin-left: 5px;
+  }
+  
+  .review-form {
+    margin-top: 2rem;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid #ffdd00;
+  }
+  
+  .review-form textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+    background-color: #222;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .review-form input[type="range"] {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  
+  .review-form button {
+    padding: 10px 15px;
+    background-color: #ffdd00;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .review-form button:hover {
+    background-color: #ffe65b;
+  }
+  
+  .success-msg {
+    color: #aaffaa;
+    margin-top: 0.5rem;
+  }
+  
+  .error-msg {
+    color: #ff4c4c;
+    margin-top: 0.5rem;
+  }
+  
+  .loader {
+    color: #ffdd00;
+    text-align: center;
+  }
+  

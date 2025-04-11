@@ -1,0 +1,70 @@
+/* styles/AddGamePage.css */
+.add-game-page {
+    background-color: #0b0b0b;
+    min-height: 100vh;
+    padding: 2rem;
+    color: #fff;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .add-game-page h2 {
+    color: #ffdd00;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 5px #ffdd00;
+  }
+  
+  .add-game-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #ffdd00;
+  }
+  
+  .add-game-form input,
+  .add-game-form textarea {
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .add-game-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .add-game-form input:focus,
+  .add-game-form textarea:focus {
+    outline: 2px solid #ffdd00;
+  }
+  
+  .add-game-form button {
+    background-color: #ffdd00;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-game-form button:hover {
+    background-color: #ffe44a;
+  }
+  
+  .success-msg {
+    color: #aaffaa;
+    text-align: center;
+  }
+  
+  .error-msg {
+    color: #ff4c4c;
+    text-align: center;
+  }
+  
