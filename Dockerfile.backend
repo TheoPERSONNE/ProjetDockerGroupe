@@ -16,5 +16,5 @@ COPY backend/ ./
 # Exposer le port sur lequel le serveur écoute (exemple: 5000)
 EXPOSE 5000
 
-# Commande pour démarrer le serveur backend (au lieu de app.js, utilisez server.js)
+# Commande pour démarrer le serveur backend 
 CMD ["node", "server.js"]

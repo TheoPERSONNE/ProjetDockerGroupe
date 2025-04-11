@@ -48,10 +48,17 @@ const GameDetailsPage = () => {
       setComment("");
       setRating(5);
       setGame((prev) => ({ ...prev, reviews: [...prev.reviews, data.review] }));
+  
+  
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000); 
+  
     } catch (err) {
       setError(err.message);
     }
   };
+  
 
   if (!game) return <p className="loader">Chargement...</p>;
 
